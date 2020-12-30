@@ -36,7 +36,7 @@ class code:
                 value = '{}'
             if not self.is_json(value):
                 raise Exception('Value not a json object!')
-            if sys.getsizeof(value) > 16000:
+            if sys.getsizeof(value) > 16384:
                 raise Exception("Size of the value exceeds 16KB!!")
             if not os.path.getsize(self.file_path) <= 1e+9:
                 raise Exception('Data Store size exceeds 1GB!!')
