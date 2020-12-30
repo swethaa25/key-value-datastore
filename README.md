@@ -28,12 +28,12 @@ The data store will also support the following non-functional requirements.
 4.The client will bear as little memory costs as possible to use this data store, while deriving maximum performance with respect to response times for accessing the data store.
 
 
-#This repository contains 4 artifacts
+## This repository contains 4 artifacts
 
-1._*code.py *_- 
+1._ code.py _- 
 
-2._*unit\_test.py *_- 
+2._ unit\_test.py  _- 
 
-3._*data.json *_- 
+3._ data.json _- 
 
 4._*sample\_output.pdf *_- 
