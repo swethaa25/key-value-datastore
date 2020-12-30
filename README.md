@@ -30,10 +30,10 @@ The data store will also support the following non-functional requirements.
 
 ## This repository contains 4 artifacts
 
-1._ code.py _- 
+1._code.py_- 
 
-2._ unit\_test.py  _- 
+2._unit\_test.py_- 
 
-3._ data.json _- 
+3._data.json_- 
 
-4._*sample\_output.pdf *_- 
+4._sample\_output.pdf_- 
