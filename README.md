@@ -29,7 +29,11 @@ The data store will also support the following non-functional requirements.
 
 
 #This repository contains 4 artifacts
+
 1._*code.py *_- 
+
 2._*unit\_test.py *_- 
+
 3._*data.json *_- 
+
 4._*sample\_output.pdf *_- 
