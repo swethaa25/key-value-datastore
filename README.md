@@ -30,10 +30,10 @@ The data store will also support the following non-functional requirements.
 
 ## This repository contains 4 artifacts
 
-1._code.py_- 
+1. _code.py_- This program contains the code for implementing the CRD operations on a JSON file with the provided constraints.
 
-2._unit\_test.py_- 
+2. _unit\_test.py_- This is the unit testing program which covers a variety of situations which the code must handle.
 
-3._data.json_- 
+3. _data.json_- This is the data store for the code.py program.
 
-4._sample\_output.pdf_- 
+4. _sample\_output.pdf_- The code.py had been run locally and the output has been saved in a PDF file.
