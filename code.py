@@ -3,10 +3,14 @@ import sys
 import time
 import threading
 import json
-
+from filelock import Timeout,FileLock
 
 class code:
     def __init__(self, file_path=os.getcwd()):
+        #file lock.
+        self.lock_path=file_path+'.lock'
+        self.file_lock=FileLock(self.lock_path,timeout=1)
+        self.file_lock.acquire()
         if not os.path.exists(file_path):
             raise Exception("File path does not exist!")
         self.lock = threading.Lock()
@@ -95,3 +99,5 @@ class code:
             return True
         except ValueError as e:
             return False
+    def __del__(self):
+        self.file_lock.release()
