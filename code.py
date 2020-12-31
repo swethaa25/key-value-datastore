@@ -7,7 +7,7 @@ from filelock import Timeout,FileLock
 
 class code:
     def __init__(self, file_path=os.getcwd()):
-        #file lock.
+        #file lock acquired.
         self.lock_path=file_path+'.lock'
         self.file_lock=FileLock(self.lock_path,timeout=1)
         self.file_lock.acquire()
@@ -100,4 +100,5 @@ class code:
         except ValueError as e:
             return False
     def __del__(self):
+        #file lock released.
         self.file_lock.release()
