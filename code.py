@@ -7,14 +7,14 @@ from filelock import Timeout,FileLock
 
 class code:
     def __init__(self, file_path=os.getcwd()):
-        #file lock acquired.
-        self.lock_path=file_path+'.lock'
-        self.file_lock=FileLock(self.lock_path,timeout=1)
-        self.file_lock.acquire()
         if not os.path.exists(file_path):
             raise Exception("File path does not exist!")
         self.lock = threading.Lock()
         self.file_path = file_path + '/data.json'
+        #file lock acquired.
+        self.lock_path=self.file_path+'.lock'
+        self.file_lock=FileLock(self.lock_path,timeout=1)
+        self.file_lock.acquire()
         try:
             file = open(self.file_path, 'r')
             file_data = json.load(file)
